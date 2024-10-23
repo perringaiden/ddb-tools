@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DCA9E0AD-2705-43A8-9FBA-2DB191F95895}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D73D10BA-2077-4450-AE9B-922EC7DC580A}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.Utilities.Extensions", "src\Wolflight.Utilities.Extensions\Wolflight.Utilities.Extensions.csproj", "{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{316803E0-9166-4D25-A137-DEAB005F2C95}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.Utilities.Communication", "src\Wolflight.Utilities.Communication\Wolflight.Utilities.Communication.csproj", "{A506A0F3-DF35-499F-91D6-16D51E1F695B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.DnDBeyond.Character", "src\Wolflight.DnDBeyond.Character\Wolflight.DnDBeyond.Character.csproj", "{6D4846F5-42C8-425E-9FF4-9B0153342F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.Utilities.Extensions.UnitTests", "test\Wolflight.Utilities.Extensions.UnitTests\Wolflight.Utilities.Extensions.UnitTests.csproj", "{6D79EE76-2456-4130-9F92-DF0055D80FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A506A0F3-DF35-499F-91D6-16D51E1F695B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A506A0F3-DF35-499F-91D6-16D51E1F695B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A506A0F3-DF35-499F-91D6-16D51E1F695B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A506A0F3-DF35-499F-91D6-16D51E1F695B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4846F5-42C8-425E-9FF4-9B0153342F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4846F5-42C8-425E-9FF4-9B0153342F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4846F5-42C8-425E-9FF4-9B0153342F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4846F5-42C8-425E-9FF4-9B0153342F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D79EE76-2456-4130-9F92-DF0055D80FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D79EE76-2456-4130-9F92-DF0055D80FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D79EE76-2456-4130-9F92-DF0055D80FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D79EE76-2456-4130-9F92-DF0055D80FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE3C1E29-552E-4F3F-A518-3DFD54A8AE31} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
+		{A506A0F3-DF35-499F-91D6-16D51E1F695B} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
+		{6D4846F5-42C8-425E-9FF4-9B0153342F23} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
+		{6D79EE76-2456-4130-9F92-DF0055D80FFB} = {D73D10BA-2077-4450-AE9B-922EC7DC580A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60D35C1E-9E71-4B40-9A07-FB01B93D3DAC}
+	EndGlobalSection
+EndGlobal

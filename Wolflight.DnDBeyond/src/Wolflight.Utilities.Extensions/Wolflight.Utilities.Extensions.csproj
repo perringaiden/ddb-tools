@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Wolflight.Utilities.Extensions</RootNamespace>
+  </PropertyGroup>
+
+</Project>

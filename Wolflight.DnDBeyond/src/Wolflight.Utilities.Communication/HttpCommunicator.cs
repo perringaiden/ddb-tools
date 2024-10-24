@@ -1,16 +1,24 @@
 ﻿using System.Text.Json;
 
-namespace Wolflight.Communication
+namespace Wolflight.Utilities.Communication
 {
-    public class HttpCommunicator
+    public class HttpCommunicator : IHttpCommunicator
     {
+        /// <summary>
+        /// Creates a new instance of a <see cref="HttpCommunicator"/>.
+        /// </summary>
+        /// <param name="httpClientFactory">The factory to generate <see cref="HttpClient"/> items.</param>
         public HttpCommunicator(IHttpClientFactory httpClientFactory)
         {
             HttpClientFactory = httpClientFactory;
         }
 
+        /// <summary>
+        /// The factory to generate <see cref="HttpClient"/> items.
+        /// </summary>
         private readonly IHttpClientFactory HttpClientFactory;
 
+        /// <inheritdoc/>
         public async Task<JsonDocument> SendGetJsonRequest(
             Uri address,
             IReadOnlyDictionary<string, string> headers
@@ -19,6 +27,7 @@ namespace Wolflight.Communication
             return await JsonDocument.ParseAsync(await SendGetRequest(address, headers));
         }
 
+        /// <inheritdoc/>
         public async Task<Stream> SendGetRequest(
             Uri address,
             IReadOnlyDictionary<string, string> headers

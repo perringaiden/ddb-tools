@@ -4,4 +4,8 @@
     <RootNamespace>Wolflight.DnDBeyond.Character</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wolflight.Utilities.Communication\Wolflight.Utilities.Communication.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <rooRootNamespace></RootNamespace>Wolflight.Utilities.Communication
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Wolflight.Utilities.Communication\Wolflight.Utilities.Communication.csproj" />
+  </ItemGroup>
+
+</Project>

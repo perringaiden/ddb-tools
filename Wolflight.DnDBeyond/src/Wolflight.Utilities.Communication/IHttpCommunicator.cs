@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Wolflight.Communication
+namespace Wolflight.Utilities.Communication
 {
     /// <summary>
     /// An interface for making HTTP requests.

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Wolflight.DnDBeyond.Characeterter</RootNamespace>
+    <RootNamespace>Wolflight.DnDBeyond.Character</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

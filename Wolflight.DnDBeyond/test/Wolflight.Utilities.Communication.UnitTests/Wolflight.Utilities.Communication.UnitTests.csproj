@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <rooRootNamespace></RootNamespace>Wolflight.Utilities.Communication
+    <RootNamespace>Wolflight.Utilities.Communication</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

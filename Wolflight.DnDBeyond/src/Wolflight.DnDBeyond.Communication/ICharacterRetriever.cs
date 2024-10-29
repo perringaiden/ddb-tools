@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Wolflight.DnDBeyond.Character.Communication
+namespace Wolflight.DnDBeyond.Communication
 {
     /// <summary>
     /// Provides methods for retrieving character data.

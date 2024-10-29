@@ -25,17 +25,24 @@ public class Program
                 .As<Wolflight.Utilities.Communication.IHttpCommunicator>()
                 .SingleInstance();
 
-            containerBuilder.RegisterType<Wolflight.DnDBeyond.Character.Communication.CharacterRetriever>()
-                .As<Wolflight.DnDBeyond.Character.Communication.ICharacterRetriever>();
+            containerBuilder.RegisterType<Wolflight.DnDBeyond.Communication.CharacterRetriever>()
+                .As<Wolflight.DnDBeyond.Communication.ICharacterRetriever>();
+
+            containerBuilder.RegisterType<Wolflight.DnDBeyond.Data.Processors.CharacterReader>()
+                .As<Wolflight.DnDBeyond.Data.Processors.ICharacterReader>();
         });
 
         IHost host = hostBuilder.Build();
 
-        Wolflight.DnDBeyond.Character.Communication.ICharacterRetriever retriever = host.Services.GetRequiredService<Wolflight.DnDBeyond.Character.Communication.ICharacterRetriever>();
+        Wolflight.DnDBeyond.Communication.ICharacterRetriever retriever = host.Services.GetRequiredService<Wolflight.DnDBeyond.Communication.ICharacterRetriever>();
 
         JsonDocument characterDocument = await retriever.Retrieve(127317564, "");
 
-        Console.WriteLine(characterDocument.RootElement.ToString());
+        Wolflight.DnDBeyond.Data.Types.Character character = host.Services.GetRequiredService<Wolflight.DnDBeyond.Data.Processors.ICharacterReader>().ReadCharacter(characterDocument);
+
+        //Console.WriteLine(characterDocument.RootElement.ToString());
+
+        Console.WriteLine(character.Attributes.Strength.CurrentValue);
     }
 
 }

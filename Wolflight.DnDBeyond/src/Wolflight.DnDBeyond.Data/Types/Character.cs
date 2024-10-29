@@ -2,11 +2,11 @@
 {
     public class Character
     {
-        Character()
+        public Character()
         {
             Attributes = new Attributes();
         }
 
-        Attributes Attributes { get; }
+        public Attributes Attributes { get; }
     }
 }

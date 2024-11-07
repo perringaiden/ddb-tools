@@ -8,5 +8,6 @@
 
   <ItemGroup>
     <Using Include="System.Threading" />
+    <Using Include="System.Diagnostics" />
   </ItemGroup>
 </Project>

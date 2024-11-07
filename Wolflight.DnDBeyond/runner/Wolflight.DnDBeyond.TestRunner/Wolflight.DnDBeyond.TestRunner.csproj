@@ -6,13 +6,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Wolflight.DnDBeyond.Character\Wolflight.DnDBeyond.Character.csproj" />
+    <PackageReference Include="Autofac" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" />
-    <PackageReference Include="Autofac.Extensions.DependencyInjection"/>
-    <PackageReference Include="Microsoft.Extensions.Hosting"/>
+    <ProjectReference Include="..\..\src\Wolflight.DMScreen.Character\Wolflight.DMScreen.Character.csproj" />
+    <ProjectReference Include="..\..\src\Wolflight.DnDBeyond.Communication\Wolflight.DnDBeyond.Communication.csproj" />
+    <ProjectReference Include="..\..\src\Wolflight.DnDBeyond.Data\Wolflight.DnDBeyond.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="characterJson.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fighter.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

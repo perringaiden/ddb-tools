@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Wolflight.DnDBeyond.Character.Communication
+namespace Wolflight.DnDBeyond.Communication
 {
     public class CharacterRetriever(Utilities.Communication.IHttpCommunicator communicator) : ICharacterRetriever
     {
@@ -17,7 +17,7 @@ namespace Wolflight.DnDBeyond.Character.Communication
         private Utilities.Communication.IHttpCommunicator Communicator { get; } = communicator;
 
         /// <inheritdoc/>
-        public async Task<JsonDocument> Retrieve(long id, string token)
+        public async Task<JsonDocument> Retrieve(long id, string? token)
         {
             Dictionary<string, string> headers = new();
 
@@ -26,9 +26,9 @@ namespace Wolflight.DnDBeyond.Character.Communication
                 headers["Authorization"] = $"Bearer {token}";
             }
 
-
             return await Communicator.SendGetJsonRequest(new Uri(string.Format(CharacterFormat, id)), headers);
 
         }
     }
 }
+

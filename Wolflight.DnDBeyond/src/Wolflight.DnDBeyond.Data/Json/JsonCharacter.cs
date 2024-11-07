@@ -1,6 +1,6 @@
 ﻿namespace Wolflight.DnDBeyond.Data.Json
 {
-    internal class JsonCharacter
+    public class JsonCharacter
     {
         public long ID { get; set; }
 

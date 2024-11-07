@@ -12,8 +12,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Wolflight.DMScreen.Character\Wolflight.DMScreen.Character.csproj" />
     <ProjectReference Include="..\..\src\Wolflight.DnDBeyond.Communication\Wolflight.DnDBeyond.Communication.csproj" />
     <ProjectReference Include="..\..\src\Wolflight.DnDBeyond.Data\Wolflight.DnDBeyond.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="characterJson.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="fighter.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

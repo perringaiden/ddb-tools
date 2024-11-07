@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 namespace Wolflight.DnDBeyond.Data.Json.Character
 {
-    internal class Data
+    public class Data
     {
         public long ID { get; set; }
 
@@ -17,9 +17,12 @@ namespace Wolflight.DnDBeyond.Data.Json.Character
 
         public string? Name { get; set; }
 
-        public IEnumerable<Stat>? Stats { get; set; }
+        public IList<Stat>? Stats { get; set; }
 
-        public IEnumerable<BonusStat>? BonusStats { get; set; }
+        public IList<AdditionalStat>? BonusStats { get; set; }
 
+        public IList<AdditionalStat>? OverrideStats { get; set; }
+
+        public ChoicesSet? Choices { get; set; }
     }
 }

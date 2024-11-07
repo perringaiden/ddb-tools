@@ -1,8 +1,8 @@
-﻿namespace Wolflight.DnDBeyond.Data.Types
+﻿namespace Wolflight.DMScreen.Character.Types
 {
-    public class Character
+    public class CharacterSheet
     {
-        public Character()
+        public CharacterSheet()
         {
             Attributes = new Attributes();
         }

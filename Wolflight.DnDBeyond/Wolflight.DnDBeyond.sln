@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wolflight.DnDBeyond.TestRun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wolflight.Utilities.Communication.UnitTests", "test\Wolflight.Utilities.Communication.UnitTests\Wolflight.Utilities.Communication.UnitTests.csproj", "{EB42604E-D52B-4CA1-ADA2-28FD2DDF1D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.DnDBeyond.Communication", "src\Wolflight.DnDBeyond.Communication\Wolflight.DnDBeyond.Communication.csproj", "{021BEB1A-7D8B-4001-B940-291F36796282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wolflight.DnDBeyond.Communication", "src\Wolflight.DnDBeyond.Communication\Wolflight.DnDBeyond.Communication.csproj", "{021BEB1A-7D8B-4001-B940-291F36796282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.DnDBeyond.Data", "src\Wolflight.DnDBeyond.Data\Wolflight.DnDBeyond.Data.csproj", "{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wolflight.DnDBeyond.Data", "src\Wolflight.DnDBeyond.Data\Wolflight.DnDBeyond.Data.csproj", "{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wolflight.DMScreen.Character", "src\Wolflight.DMScreen.Character\Wolflight.DMScreen.Character.csproj", "{624C7F04-0A0C-4973-8BD0-36E5DCA38404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{624C7F04-0A0C-4973-8BD0-36E5DCA38404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624C7F04-0A0C-4973-8BD0-36E5DCA38404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624C7F04-0A0C-4973-8BD0-36E5DCA38404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624C7F04-0A0C-4973-8BD0-36E5DCA38404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{EB42604E-D52B-4CA1-ADA2-28FD2DDF1D81} = {D73D10BA-2077-4450-AE9B-922EC7DC580A}
 		{021BEB1A-7D8B-4001-B940-291F36796282} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
 		{214D1A6C-15E4-4ABA-B15D-4C4C8CCF4781} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
+		{624C7F04-0A0C-4973-8BD0-36E5DCA38404} = {DCA9E0AD-2705-43A8-9FBA-2DB191F95895}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60D35C1E-9E71-4B40-9A07-FB01B93D3DAC}

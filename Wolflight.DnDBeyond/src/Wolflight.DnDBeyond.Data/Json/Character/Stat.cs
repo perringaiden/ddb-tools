@@ -1,6 +1,6 @@
 ﻿namespace Wolflight.DnDBeyond.Data.Json.Character
 {
-    internal class Stat
+    public class Stat
     {
         public AttributeTypes ID { get; set; }
 

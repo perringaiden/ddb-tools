@@ -1,6 +1,6 @@
 ﻿namespace Wolflight.DnDBeyond.Data.Json.Character
 {
-    internal enum AttributeTypes : short
+    public enum AttributeTypes : short
     {
         Strength = 1,
 

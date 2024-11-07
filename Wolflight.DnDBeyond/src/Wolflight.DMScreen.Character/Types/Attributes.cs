@@ -1,4 +1,4 @@
-﻿namespace Wolflight.DnDBeyond.Data.Types
+﻿namespace Wolflight.DMScreen.Character.Types
 {
     public class Attributes
     {

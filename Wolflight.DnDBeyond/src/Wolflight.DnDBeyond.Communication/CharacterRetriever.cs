@@ -17,7 +17,7 @@ namespace Wolflight.DnDBeyond.Communication
         private Utilities.Communication.IHttpCommunicator Communicator { get; } = communicator;
 
         /// <inheritdoc/>
-        public async Task<JsonDocument> Retrieve(long id, string token)
+        public async Task<JsonDocument> Retrieve(long id, string? token)
         {
             Dictionary<string, string> headers = new();
 
@@ -31,3 +31,4 @@ namespace Wolflight.DnDBeyond.Communication
         }
     }
 }
+

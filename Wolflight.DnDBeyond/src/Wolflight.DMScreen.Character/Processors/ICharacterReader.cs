@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Wolflight.DnDBeyond.Data.Processors
+namespace Wolflight.DMScreen.Character.Processors
 {
     /// <summary>
     /// An interface for reading characters.
@@ -12,7 +12,7 @@ namespace Wolflight.DnDBeyond.Data.Processors
         /// </summary>
         /// <param name="characterJson">The character JSON to read.</param>
         /// <returns>The processed <see cref="Types.Character"/>.</returns>
-        Types.Character ReadCharacter(JsonDocument characterJson);
+        Types.CharacterSheet ReadCharacter(JsonDocument characterJson);
 
     }
 }

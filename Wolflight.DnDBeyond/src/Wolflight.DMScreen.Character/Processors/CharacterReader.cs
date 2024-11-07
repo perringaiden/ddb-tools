@@ -1,7 +1,8 @@
 ﻿using System.Text.Json;
+using Wolflight.DnDBeyond.Data.Json;
 using Wolflight.DnDBeyond.Data.Json.Character;
 
-namespace Wolflight.DnDBeyond.Data.Processors
+namespace Wolflight.DMScreen.Character.Processors
 {
     /// <summary>
     /// An implementation to read characters from DnDBeyond.
@@ -10,13 +11,13 @@ namespace Wolflight.DnDBeyond.Data.Processors
     {
 
         /// <inheritdoc/>
-        public Types.Character ReadCharacter(JsonDocument characterJson)
+        public Types.CharacterSheet ReadCharacter(JsonDocument characterJson)
         {
-            Types.Character rc = new();
+            Types.CharacterSheet rc = new();
 
-            Json.JsonCharacter? jsonCharacter;
+            JsonCharacter? jsonCharacter;
 
-            jsonCharacter = JsonSerializer.Deserialize<Json.JsonCharacter>(characterJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            jsonCharacter = JsonDeserializer.DeserializeCharacter(characterJson);
 
             if (!(jsonCharacter?.Data?.Stats == null))
             {
